@@ -1,0 +1,92 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Application Form</title>
+<style>
+        body {
+            background-color: powderblue;
+            font-family: Arial, sans-serif;
+        }
+        table {
+            margin: auto;
+            padding: 20px;
+            border-collapse: collapse;
+        }
+        td {
+            padding: 10px;
+        }
+        h1 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<h1><center>Application Form </center></h1>
+<form>
+<table>
+    <tr>
+        <td>First Name:</td>
+        <td><input type = "text" id="tb1" required/></td>
+        <td></td>
+        <td>Last Name:</td>
+        <td><input type="text" id="tb2" required></td>
+    </tr>
+    <tr>
+        <td>Date of birth:</td>
+        <td><input type ='date' id = 'tb3' required/></td>
+        <td></td>
+        <td>Age:</td>
+        <td><input type="text" id="tb4" min="0" required></td>
+    </tr>
+    <tr>
+        <td>Gender:</td>
+        <td>
+            <select> id="ddl"
+                <option>Male</option>
+                <option>Female</option>
+                <option>Others</option>
+            </select>
+        </td>
+        <td></td>
+        <td>Email Address:</td>
+        <td><input type="email" id="em1"></td>
+    </tr>
+    <tr>
+        <td>Positional Available:</td>
+        <td>
+            <input type="radio" id="rd1" name="course"/>
+            <label>Junior Developer</label>
+            <input type="radio" id="rd2" name="course"/>
+            <label>Mid-level Developer</label>
+            <input type="radio" id="rd3" name="course"/>
+            <label>Senior Developer</label>
+        </td>
+    </tr>
+    <tr>
+        <td>Programming Language</td>
+        <td>
+            <input type="checkbox" id="cb1"/>
+            <label>Java</label>
+            <input type="checkbox" id="cb2"/>
+            <label>Javascript</label>
+            <input type="checkbox" id="cb3"/>
+            <label>Python </label>
+        </td>
+    </tr>
+    <tr>
+        <td>Password</td>
+        <td><input type="Password" id="tb5" required/></td>
+        <td></td>
+        <td>Confirm Password</td>
+        <td><input type="password" id="tb6" required/></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td><center><input type="submit" id="sb1"  value="Submit"  style="background-color:red"/></center></td>
+        <td></td>
+        <td><center><input type="reset" id="rs1"  value="Reset" style ="background-color:red" /></center></td>
+    </tr>
+</form>
+</table>
+</body>
+</html>
